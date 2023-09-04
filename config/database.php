@@ -63,6 +63,11 @@ return [
             ]) : [],
         ],
 
+        'testing' => [
+            'driver' => 'sqlite',
+            'database' => ':memory:'
+        ],
+
         'pgsql' => [
             'driver' => 'pgsql',
             'url' => env('DATABASE_URL'),

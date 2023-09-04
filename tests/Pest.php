@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Pest\PendingCalls\TestCall;
 use Tests\TestCase;
 
 /*
@@ -42,7 +43,10 @@ expect()->extend('toBeOne', function () {
 |
 */
 
-function something()
+/**
+ * @return TestCall|TestCase|mixed
+ */
+function this()
 {
-    // ..
+    return test();
 }
